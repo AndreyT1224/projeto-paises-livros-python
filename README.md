@@ -1,84 +1,87 @@
-<h1 align="center">📘 Coleta de Dados de Países e Livros com Python</h1>
+
+<h1 align="center">📘 Projeto: Coleta de Dados de Países e Livros com Python</h1>
 
 <p align="center">
-  Projeto desenvolvido para automatizar a extração de dados públicos de países e livros, utilizando técnicas de API REST, Web Scraping e geração de relatórios em Excel.
+  Projeto acadêmico da disciplina de RPA, desenvolvido para automatizar a extração de dados públicos sobre <strong>países</strong> e <strong>livros</strong>. As informações são armazenadas em bancos de dados SQLite e um relatório final em Excel é gerado.
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.x-blue?logo=python" />
   <img src="https://img.shields.io/badge/SQLite-integrado-lightgrey?logo=sqlite" />
-  <img src="https://img.shields.io/badge/BeautifulSoup-web--scraping-yellow?logo=beautifulsoup" />
-  <img src="https://img.shields.io/badge/openpyxl-relatório-brightgreen?logo=excel" />
+  <img src="https://img.shields.io/badge/OpenPyXL-relatórios-green?logo=python" />
+  <img src="https://img.shields.io/badge/BeautifulSoup-webscraping-orange?logo=beautifulsoup" />
 </p>
 
 ---
 
-## 🎯 Objetivo
+<details>
+  <summary><strong>🧠 Funcionalidades</strong></summary>
 
-Automatizar a coleta de dados públicos a partir de uma API e de um site, armazenando as informações em bancos de dados locais e gerando um relatório consolidado em Excel. O projeto é dividido em três partes:
+### 🔹 Parte 1 – API REST (REST Countries)
+- Solicita o nome de **3 países** ao usuário.
+- Consulta a [REST Countries API](https://restcountries.com/).
+- Armazena as informações em um banco SQLite: `paises.db`.
 
----
-
-## 🧠 Funcionalidades
-
-### 🔹 Parte 1 – API REST
-- Solicita ao usuário o nome de **3 países**
-- Extrai dados da **API REST Countries**
-- Armazena os dados em `paises.db`
-
-### 🔹 Parte 2 – Web Scraping
-- Acessa o site **Books to Scrape**
-- Coleta os **10 primeiros livros**
-- Extrai:
+### 🔹 Parte 2 – Web Scraping (Books to Scrape)
+- Acessa o site [Books to Scrape](http://books.toscrape.com/).
+- Coleta os **10 primeiros livros**, extraindo:
   - Título
   - Preço
   - Avaliação
   - Disponibilidade
-- Armazena os dados em `livraria.db`
+- Armazena os dados em `livraria.db`.
 
-### 🔹 Parte 3 – Relatório
-- Gera um arquivo Excel `relatorio_final.xlsx`
-- Inclui:
-  - Dados dos países
-  - Dados dos livros
-  - Nome dos autores e data de execução
+### 🔹 Parte 3 – Geração de Relatório
+- Cria um arquivo Excel: `relatorio_final.xlsx`
+- O relatório contém:
+  - Dados dos países e livros coletados
+  - Nome dos autores
+  - Data da execução
 
----
-
-## ⚙️ Tecnologias Utilizadas
-
-- **Python 3.x**
-- **requests**
-- **BeautifulSoup4**
-- **openpyxl**
-- **sqlite3** (embutido no Python)
-
----
-
-## 💻 Como Executar o Projeto
-
-<details>
-<summary><strong>📂 Acesse a pasta do projeto via terminal</strong></summary>
-
-```bash
-cd projeto-paises-livros-python
-```
 </details>
 
-<details>
-<summary><strong>🔧 Instale as dependências</strong></summary>
+---
 
+<details>
+  <summary><strong>⚙️ Tecnologias Utilizadas</strong></summary>
+
+- **Python 3.x**
+- [`requests`](https://pypi.org/project/requests/)
+- [`beautifulsoup4`](https://pypi.org/project/beautifulsoup4/)
+- [`openpyxl`](https://pypi.org/project/openpyxl/)
+- `sqlite3` (biblioteca padrão do Python)
+
+</details>
+
+---
+
+<details>
+  <summary><strong>🚀 Como Executar o Projeto</strong></summary>
+
+### 🔁 Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/projeto-paises-livros-python.git
+cd projeto-paises-livros-python
+```
+
+### 📦 Instale as dependências:
 ```bash
 pip install requests beautifulsoup4 openpyxl
 ```
-</details>
 
-<details>
-<summary><strong>🚀 Execute o script</strong></summary>
-
+### ▶️ Execute o script principal:
 ```bash
 python projeto_final.py
 ```
+
+> 💡 Será solicitado que você digite o nome de 3 países.
+
+Após a execução, os seguintes arquivos serão gerados automaticamente:
+- `paises.db`
+- `livraria.db`
+- `relatorio_final.xlsx`
+
+</details>
 
 Digite o nome de 3 países quando solicitado.  
 Os arquivos `paises.db`, `livraria.db` e `relatorio_final.xlsx` serão gerados automaticamente.
