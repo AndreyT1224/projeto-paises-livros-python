@@ -92,7 +92,7 @@ Os arquivos `paises.db`, `livraria.db` e `relatorio_final.xlsx` serão gerados a
   <tr>
     <td align="center" style="padding: 10px;">
       <a href="https://github.com/HenryModesto" title="Github Henry" style="text-decoration: none; color: black;">
-        <img src="Pictures/HENRYZ.jfif" width="200px" height="200px" alt="Foto de Henry Oliveira Modesto De Jesus" style="border-radius: 8px;"/><br>
+        <img src="./pictures/Henry.jpeg" width="200px" height="200px" alt="Foto de Henry Oliveira Modesto De Jesus" style="border-radius: 8px;"/><br>
         <sub>
           <b>HENRY MODESTO</b><br>
           <b>RA: 2401244</b>
@@ -101,7 +101,7 @@ Os arquivos `paises.db`, `livraria.db` e `relatorio_final.xlsx` serão gerados a
     </td>
     <td align="center" style="padding: 10px;">
       <a href="https://github.com/AndreyT1224" title="Github Andrey" style="text-decoration: none; color: black;">
-        <img src="Pictures/ANDREY.jpeg" width="190px" alt="Foto de Andrey Tomaz Silva Alves" style="border-radius: 8px;"/><br>
+        <img src="./pictures/Andrey.jpeg" width="190px" alt="Foto de Andrey Tomaz Silva Alves" style="border-radius: 8px;"/><br>
         <sub>
           <b>ANDREY TOMAZ</b><br>
           <b>RA: 2400729</b>
@@ -110,12 +110,6 @@ Os arquivos `paises.db`, `livraria.db` e `relatorio_final.xlsx` serão gerados a
     </td>
   </tr>
 </table>
-
----
-
-## 📅 Data de Entrega
-
-**30/05/2025**
 
 ---
 
