@@ -116,6 +116,6 @@ if __name__ == "__main__":
     dados_livros = coletar_livros()
     salvar_livros_sqlite(dados_livros)
 
-    gerar_relatorio_excel("Andrey Tomaz")
+    gerar_relatorio_excel("Andrey | Henry")
     print("\n✅ Projeto finalizado com sucesso! Arquivo relatorio_final.xlsx gerado.")
     input("\nPressione ENTER para sair.")
